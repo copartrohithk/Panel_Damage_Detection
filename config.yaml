@@ -1,0 +1,21 @@
+path: /Users/rokokkula/Documents/Panel_Damage_Detection/data
+train: images
+val: images
+
+names:
+  0: Front_bumper
+  1: Front_door
+  2: Front_Fender
+  3: Headlight
+  4: Tires
+  5: Hood
+  6: Wind_Shield
+  7: Rear_bumper
+  8: Rear_door
+  9: Rear_windshield
+  10: Taillights
+  11: RearQuarter_panel
+  12: Trunk
+  13: Damage
+  14: Minor_Damage
+
