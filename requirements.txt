@@ -1,0 +1,4 @@
+ultralytics-thop>=2.0.0
+py-cpuinfo
+opencv-python==4.6.0.66
+opencv-python-headless
