@@ -4,18 +4,18 @@ val: images
 
 names:
   0: Front_bumper
-  1: Front_door
-  2: Front_Fender
-  3: Headlight
-  4: Tires
-  5: Hood
+  1: Front_door # change to frontbumper
+  2: Front_fender  # change to frontdoor
+  3: Headlight #frontfender
+  4: Tires #headlight
+  5: Hood #correct
   6: Wind_Shield
-  7: Rear_bumper
-  8: Rear_door
-  9: Rear_windshield
+  7: R_bumper
+  8: R_door # correct
+  9: Rear_windshield # rear quarter planel
   10: Taillights
   11: RearQuarter_panel
-  12: Trunk
+  12: Trunk # tires
   13: Damage
   14: Minor_Damage
 
