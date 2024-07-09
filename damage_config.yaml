@@ -1,0 +1,13 @@
+path: ../datasets/damage_labels
+train: train/images
+val: test/images
+
+names:
+  0: Airbag_Visible
+  1: Axle_Broken
+  2: Damage
+  3: Dent
+  4: Dislocation
+  5: Punctured_Wheel
+  6: Scratch 
+
