@@ -1,4 +1,6 @@
 import os
 
-GCS_BUCKET= "panel-damage-detection"
+PWD = os.path.abspath(os.path.join(os.path.dirname(__file__), "../"))
+GCS_BUCKET= "panel_damage_detection"
 PROJECT= "cprtqa-strategicanalytics-sp1"
+

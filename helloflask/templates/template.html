@@ -1,4 +1,48 @@
-<form method="POST">
-    <input name="text">
-    <input type="submit">
-</form>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Image URL</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .container {
+            text-align: center;
+        }
+        .image-group {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .image-group img {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Please input an Image URL</p>
+        <form action="/" method="post">
+            <input type="text" name="text" id="text" placeholder="Enter image URL here">
+            <input type="submit" value="Submit">
+        </form>
+        {% if input_image_url %}
+            <p>Input Image URL: {{ input_image_url }}</p>
+            <img src="{{ input_image_url }}" alt="Input Image" style="margin-top: 20px;">
+        {% endif %}
+        <div class="image-group">
+            {% if panel_image_path %}
+                <img src="{{ url_for('static', filename=panel_image_path) }}" alt="Generated Image">
+            {% endif %}
+            {% if damage_image_path %}
+                <img src="{{ url_for('static', filename=damage_image_path) }}" alt="Damage Image">
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>
